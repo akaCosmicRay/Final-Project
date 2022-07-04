@@ -1,45 +1,75 @@
 /*applies boarder-box to all elements to allow for true sizing*/
-*, *:before, *:after {box-sizing: 
-    boarder-box;
+
+
+*,
+*:before,
+*:after {
+    box-sizing:
+        boarder-box;
+}
+body, html {
+    height: 100%;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url('../images/background.png');
+    background-color: #01060a ;
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+/*padding for navbar*/
+.navbar-nav>li {
+    padding-left: 0px;
+    padding-right: 25px;
 }
 
-/*padding for navbar*/
-.navbar-nav > li{
-    padding-left:0px;
-    padding-right:25px;
-  }
-
-  /*Footer Stylizing*/
-  section #services li {
+/*Footer Stylizing*/
+section #services li {
     display: inline-block;
     margin: 20px;
     padding-right: 50px;
     list-style: none;
-  }
-  section #services li div {
+}
+
+section #services li div {
     color: rgb(0, 53, 68);
     font-size: 200%;
     line-height: 50px;
     transition: all 0.5s ease;
-  } 
-  section #services li a {
+}
+
+section #services li a {
     color: rgb(0, 141, 160);
-  }
-  section #services li div:hover {
+}
+
+section #services li div:hover {
     transform: rotate(360deg);
-  }
+}
 
 /*top jumbotron padding and color for background*/
-  div.jumbotron-background{
-    padding-top:0%;
-    padding-bottom:20%;
-  }
-.lock { 
+div.jumbotron-background {
+    padding-top: 0%;
+    padding-bottom: 20%;
+}
+
+
+
+.lock {
     padding: 0px 0px 0px 435px;
     background-color: #00070d;
+
 }
-    
-    
 
 
- 
+
+
+
+
