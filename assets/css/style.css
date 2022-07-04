@@ -1,30 +1,31 @@
 /*applies boarder-box to all elements to allow for true sizing*/
-
-
 *,
 *:before,
 *:after {
     box-sizing:
         boarder-box;
 }
-body, html {
-    height: 100%;
-  }
-  
-  .parallax {
+
+body,
+html {
+    height: 75%;
+}
+
+/*moving/scrolling section of the webpage*/
+.parallax {
     /* The image used */
     background-image: url('../images/background.png');
-    background-color: #01060a ;
-  
+    background-color: #01060a;
     /* Full height */
-    height: 100%; 
-  
+    height: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
+
+
 /*padding for navbar*/
 .navbar-nav>li {
     padding-left: 0px;
@@ -54,22 +55,8 @@ section #services li div:hover {
     transform: rotate(360deg);
 }
 
-/*top jumbotron padding and color for background*/
-div.jumbotron-background {
-    padding-top: 0%;
-    padding-bottom: 20%;
-}
-
-
-
 .lock {
     padding: 0px 0px 0px 435px;
     background-color: #00070d;
 
 }
-
-
-
-
-
-
