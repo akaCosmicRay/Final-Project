@@ -5,13 +5,11 @@
     box-sizing:
         boarder-box;
 }
-
 body,
 html {
     height: 75%;
-    
-}
 
+}
 /*moving/scrolling section of the webpage*/
 .parallax {
     /* The image used */
@@ -21,13 +19,11 @@ html {
     height: 50%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-   background-size: auto;
-   background-position: center;
+    background-size: auto;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
 /*padding for navbar*/
 .navbar-nav>li {
     padding-left: 0px;
@@ -41,22 +37,18 @@ section #services li {
     padding-right: 50px;
     list-style: none;
 }
-
 section #services li div {
     color: rgb(0, 53, 68);
     font-size: 200%;
     line-height: 50px;
     transition: all 0.5s ease;
 }
-
 section #services li a {
     color: rgb(0, 141, 160);
 }
-
 section #services li div:hover {
     transform: rotate(360deg);
 }
-
 .lock {
     padding: 0px 0px 0px 435px;
     background-color: #00070d;
