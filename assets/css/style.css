@@ -15,7 +15,7 @@ html {
 /*moving/scrolling section of the webpage*/
 .parallax {
     /* The image used */
-    background-image: url('../images/background.png');
+    background-image: url('../images/background.mp4');
     
     /* Full height */
     height: 50%;
@@ -26,6 +26,16 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
 
 /*padding for navbar*/
 .navbar-nav>li {
@@ -60,4 +70,12 @@ section #services li div:hover {
     padding: 0px 0px 0px 435px;
     background-color: #00070d;
 }
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
 
