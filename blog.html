@@ -24,72 +24,103 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>BITTOWER</title>
+    <title>Blog</title>
 
 </head>
 
 <body>
-<!-- Background Video -->
+    <!-- Background Video -->
     <video autoplay muted loop id="myVideo">
         <source src="assets/images/background.mp4" type="video/mp4">
-      </video>
+    </video>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/PrimaryLogo.png" alt="" width="220" height="100"
+                    class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
 
-
-
-   <!-- NavBar -->
-   <nav class="navbar navbar-expand-lg bg-white fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-            <img src="assets/images/PrimaryLogo.png" alt="" width="220" height="100"
-                class="d-inline-block align-text-top">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-
-            </ul>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-
-
-
-    
-
-   
-
-
-
+    </nav>
     <!-- Moving/Scrolling section of the webpage-->
     <div class="parallax" style="padding-top: 1000px"></div>
-   
-    <!-- About -->
-    <div class="full-width-section">
-        <h1 style=" padding-bottom: 25px;">About</h1>
+    <!-- Blog -->
+    <div class="full-width-section" id="blog1">
+        <h1 style=" padding-bottom: 25px;">Blog</h1>
         <div class="container">
-            <div class="row align-items-start ">
+            <div class="row align-items-start">
                 <div class="card mx-auto border-0" style="width: auto">
                     <div class="card-body">
-                        <p style="text-align:center;font-size:20pt;;">At BITTOWER LLC, we understand that a security program can vary greatly company to company. From large corporations with established programs in place to one man web development shops who just want to provide a secure product to their own customers, we want to help! We have created multiple services that can meet any need or budget. We can integrate with your project no matter where you are in its lifecycle and 
-                            provide our appsec knowledge so you release the most secure product possible.</p>
+                        <section class="content-item grey" id="blog-item">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- Start Blog Post -->
+                                    <div class="blog">
+                                        <h2>Always Pentest Your Apps</h2>
+                                        <ul class="blog-detail list-unstyled list-inline">
+                                            <li><i class="fa fa-calendar"></i>07/17/2022</li>
+                                            <li><i class="fa fa-user"></i>Bittower</li>
+                                        </ul>
+                                        <p style="text-align: left;"><img class="img-responsive pull-left"
+                                                src="assets/images/blog1.png" alt="">Well maybe not **always**. You may
+                                            have a static site that simply serves flat file. In that situation, you
+                                            could probably release it to the public without having a full-blown
+                                            application assessment. Just make sure you run an automatic scan to look for
+                                            any outdated components or vulnerabilities within the server/infrastructure.
+                                            For anything more complicated however, you **NEED** to have an AppSec
+                                            professional perform a manual pentest/application assessment.</p>
+                                        <p style="text-align: left;">An application pentest is an engagement with a
+                                            security engineer to search for vulnerabilities and flaws within the
+                                            application that an attacker may use to steal information, deface the site,
+                                            or corrupt in order to attack other targets. Part of this assessment will
+                                            likely involve automated tools. These tools are great for searching for
+                                            common vulnerabilities such as injection attacks, plugins with known
+                                            vulnerabilities, and misconfigurations. However, automated tools have two
+                                            major flaws.</p>
+                                        <ol class="center">
+                                            <li>They tend to have several false positives</li>
+                                            <li>They cannot test for business logic flaws</li>
+                                        </ol>
+                                        <p style="text-align: left;">The second point is the kicker here and why you
+                                            never want to rely on automated scans alone. Protecting your login fields
+                                            from SQL Injection is important but its equally important to make sure the
+                                            user can’t bypass the login completely by visiting a page directly (direct
+                                            object reference attack). An automated scan does not have context as to why
+                                            the application exists, what roles the application uses, and what functions
+                                            are gated behind those roles. An AppSec Engineer can act as a standard user
+                                            for the application to get a baseline understanding of how it performs. Then
+                                            they can attempt to subvert those expectations in order to gain an
+                                            advantage.</p>
+
+                                    </div>
+                                    <!-- End Blog Post -->
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -97,11 +128,100 @@
     </div>
     <!-- Div Space -->
     <div class="parallax "></div>
-   
-   
-    
+    <!-- 2nd Blog Article -->
+    <div class="full-width-section" id="blog2">
+        <div style=" padding-bottom: 25px;"></div>
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="card mx-auto border-0" style="width: auto">
+                    <div class="card-body">
+                        <section class="content-item grey" id="blog-item">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- Start Blog Post -->
+                                    <div class="blog">
+                                        <h2>Metric Informed Decision Making</h2>
+                                        <ul class="blog-detail list-unstyled list-inline">
+                                            <li><i class="fa fa-calendar"></i>07/17/2022</li>
+                                            <li><i class="fa fa-user"></i>Bittower</li>
+                                        </ul>
+                                        <p style="text-align: left;"><img class="img-responsive pull-left"
+                                                src="assets/images/blog2.png" alt="">You've seen this scenario before.
+                                            The security team is maturing and standing up new processes; new tools are
+                                            being rolled out to scan for vulnerabilities on application servers; and we
+                                            are finally ready to start measuring impact and working with developers to
+                                            improve the numbers. This is obviously the best way to run an AppSec
+                                            program, right? </p>
+                                        <p style="text-align: left;">Right?</p>
+                                        <p style="text-align: left;">The problem is, at this point, we’ve stood up
+                                            several solutions and we've asked for resources to better flesh out the
+                                            appsec program. What we didn't do however was measure each new process to
+                                            see if it was effective before writing it into policy or purchasing that
+                                            initial three-year license. We know what industry best practices are and we
+                                            simply followed along at our company. </p>
+                                        <p style="text-align: left;">Companies are all different however with different
+                                            cultures. While we most definitely should be following industry standards,
+                                            our approach or timeline is going to drastically change depending on our
+                                            environment. Security patches may be devalued in favor of new content being
+                                            released that month or the security team could be seen in negative light
+                                            which further slows down the process. What can we do to make sure we are
+                                            heading in the right direction, getting the proper buy-in from management,
+                                            and maybe even finishing our projects earlier? Metric based reporting</p>
+                                        <p style="text-align: left;">Metric based reporting means we track
+                                            metainformation about each process to see how effective it is, what changes
+                                            need to be made going forward, and how best to interface with the developer
+                                            teams. We let the numbers inform what we do next. Not only does it ensure
+                                            that the security program is effective, but it also helps to have supporting
+                                            evidence for the next security initiative. </p>
+                                        </p>
+                                    </div>
+                                    <!-- End Blog Post -->
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    
+    <!-- Div Space -->
+    <div class="parallax "></div>
+    <!-- 3rd Blog Article -->
+    <div class="full-width-section" id="blog3">
+        <div style=" padding-bottom: 25px;"></div>
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="card mx-auto border-0" style="width: auto">
+                    <div class="card-body">
+                        <section class="content-item grey" id="blog-item">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- Start Blog Post -->
+                                    <div class="blog">
+                                        <h2>Passwords vs. Passphrases</h2>
+                                        <ul class="blog-detail list-unstyled list-inline">
+                                            <li><i class="fa fa-calendar"></i>07/17/2022</li>
+                                            <li><i class="fa fa-user"></i>Youtube</li>
+                                        </ul>
+                                        <iframe src="https://www.youtube.com/embed/lPdLKtUclX0?start=38"
+                                            class="card-img-top" style="height: 20rem" alt="..."></iframe>
+                                        <p style="text-align: left;">Watch this very insightful video to learn more
+                                            about passphrases.</p>
+                                    </div>
+
+
+                                    <!-- End Blog Post -->
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Div Space -->
+    <div class="parallax"></div>
     <!-- Footer -->
     <footer class="bg-light text-center text-black ">
         <!-- Grid Container with Social Media Links -->
@@ -151,13 +271,12 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- My JavaScript -->
     <script src="assets/javascript/app.js"></script>
-
     <!-- Bootstrap JavaScript/Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <!-- Bootstrap Font Awesome -->
+    <script src="https://kit.fontawesome.com/b347e0c8e8.js" crossorigin="anonymous"></script>
+</body>
 
-        <script src="https://kit.fontawesome.com/b347e0c8e8.js" crossorigin="anonymous"></script>
-    </body>
-
-    </html>
+</html>
